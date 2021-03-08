@@ -9,7 +9,10 @@ const ListImages= ({images}) => {
 
             {images.map(image => (
 
-                <Image/>
+                <Image
+                    key={image.id}
+                    image={image}
+                />
 
             ))}
 
